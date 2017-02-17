@@ -6,11 +6,11 @@
 #
 default: &default
   adapter: sqlserver
-  #mode: dblib
-  host: db
+  mode: dblib
+  host: dbserver
   port: 1433
   username: sa
-  password: rspec
+  password: Rsp3c
   encoding: utf8
 
 
