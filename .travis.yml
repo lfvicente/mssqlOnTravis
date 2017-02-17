@@ -10,5 +10,6 @@ before_install:
   - sudo docker pull microsoft/mssql-server-linux  
   - sudo docker run -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=rspec' -p 1433:1433 -v 127.0.0.1:/var/opt/mssql -d microsoft/mssql-server-linux
   - docker ps -a
+  - sudo systemctl status mssql-servers
 dist: xenial
 os: linux
