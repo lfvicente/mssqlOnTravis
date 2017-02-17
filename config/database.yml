@@ -9,7 +9,7 @@ default: &default
   mode: dblib
   host: localhost
   port: 1433
-  username: RORuser
+  username: sa
   password: rspec
   encoding: utf8
 
