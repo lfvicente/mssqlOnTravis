@@ -7,7 +7,7 @@
 default: &default
   adapter: sqlserver
   #mode: dblib
-  host: localhost
+  host: db
   port: 1433
   username: sa
   password: rspec
