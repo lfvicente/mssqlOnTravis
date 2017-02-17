@@ -1,0 +1,15 @@
+<h1>Listing articles</h1>
+ 
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Text</th>
+  </tr>
+ 
+  <% @usuarios.each do |usuario| %>
+    <tr>
+      <td><%= usuario.cNombre %></td>
+      <td><%= usuario.cCodUsuario %></td>
+    </tr>
+  <% end %>
+</table>
