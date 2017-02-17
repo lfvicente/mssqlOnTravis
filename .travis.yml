@@ -9,6 +9,8 @@ before_install:
   - sudo apt-get install unixodbc-dev
   - sudo docker pull microsoft/mssql-server-linux  
   - sudo docker run --name dbserver -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=Rsp3c' -p 1433:1433 -v 127.0.0.1:/var/opt/mssql -d microsoft/mssql-server-linux 
+  - docker exec -it dbserver /bin/bash
+  - curl https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -
   - docker ps -a
   - docker port dbserver
   - docker port dbserver 1433/tcp
