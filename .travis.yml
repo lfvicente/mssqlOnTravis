@@ -7,5 +7,6 @@ service:
     -docker
 before_install:
   - sudo apt-get install unixodbc-dev
+  - sudo docker pull microsoft/mssql-server-linux
 dist: xenial
 os: linux
