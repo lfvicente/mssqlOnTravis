@@ -3,6 +3,8 @@ rvm:
  - 2.3.3
 cache: bundler
 sudo: true
+service:
+    -docker
 before_install:
   - sudo apt-get install unixodbc-dev
 dist: xenial
