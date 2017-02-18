@@ -8,10 +8,8 @@ service:
 before_install:
   - sudo apt-get install unixodbc-dev
   - sudo docker pull microsoft/mssql-server-linux  
-  - sudo docker run --name dbserver -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=Rsp3c' -p 1433:1433 -v 127.0.0.1:/var/opt/mssql -d microsoft/mssql-server-linux 
-  - curl https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -
+  - docker run -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=<YourStrong!Passw0rd>' -p 1433:1433 -d microsoft/mssql-server-linux
   - docker ps -a
-  - docker port dbserver
   - docker port dbserver 1433/tcp
 
 dist: xenial
