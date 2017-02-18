@@ -10,7 +10,7 @@ default: &default
   host: 0.0.0.0
   port: 1433
   username: sa
-  password: Rsp3c
+  password: Rsp3cRsp3c
   encoding: utf8
 
 
