@@ -13,4 +13,7 @@ before_install:
   - docker run --name dbserver -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=Rsp3cRsp3c' -p 1433:1433 -d microsoft/mssql-server-linux
   - docker ps -a
   
-
+install:
+    - echo before reboot
+    - ps: Restart-Computer -Force            # here the server goes restarting
+    - echo Before sleep
