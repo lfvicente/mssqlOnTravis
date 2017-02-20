@@ -10,8 +10,8 @@ before_install:
   - sudo docker pull microsoft/mssql-server-linux  
   - docker run --name dbserver -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=Rsp3cRsp3c' -p 1433:1433 -d microsoft/mssql-server-linux
   - docker ps -a
-  - docker port dbserver 1433/tcp
-  - docker-machine ip
+  - docker port dbserver
+  - sudo docker pull microsoft/mssql-server-linux:latest
 
 dist: xenial
 os: linux
