@@ -14,5 +14,4 @@ before_install:
   #- sudo apt-get install -y build-essential
   - sudo docker pull microsoft/mssql-server-linux  
   - docker run --name dbserver -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=Rsp3cRsp3c' -ti -p 1500:1500 -d microsoft/mssql-server-linux
-  - docker run --name dbserver -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=Rsp3cRsp3c' -ti -p 1500:1500 -d microsoft/mssql-server-linux
-  - docker ps -a
+  - sudo docker inspect dbserver  
