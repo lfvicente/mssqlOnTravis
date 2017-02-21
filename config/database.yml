@@ -7,7 +7,7 @@
 default: &default
   adapter: sqlserver
   host: 0.0.0.0
-  port: 1433
+  port: 1500
   username: sa
   password: Rsp3cRsp3c  
 
