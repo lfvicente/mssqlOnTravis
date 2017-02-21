@@ -6,6 +6,7 @@
 #
 default: &default
   adapter: sqlserver
+  mode: dblib
   host: 0.0.0.0
   port: 1500
   username: sa
