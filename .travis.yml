@@ -10,8 +10,6 @@ service:
 before_install:
   - sudo apt-get update  
   - sudo apt-get install unixodbc-dev
-  - sudo apt install npm
-  - sudo apt install nodejs-legacy
   - sudo npm install -g sql-cli
 
   - sudo docker pull microsoft/mssql-server-linux  
