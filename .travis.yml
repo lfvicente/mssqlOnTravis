@@ -9,10 +9,9 @@ service:
     -docker
 before_install:
   - sudo apt-get update  
-  - curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
-  - sudo apt-get install -y nodejs
-  - sudo apt-get install -y build-essential
+  #- curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
+  #- sudo apt-get install -y nodejs
+  #- sudo apt-get install -y build-essential
   - sudo docker pull microsoft/mssql-server-linux  
-  - docker run --name dbserver -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=Rsp3cRsp3c' -p 1433:1433 -d microsoft/mssql-server-linux
+  - docker run --name dbserver -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=Rsp3cRsp3c' -ti -p 1433:1433 -d microsoft/mssql-server-linux
   - docker ps -a
-  - docker run dbserver 
