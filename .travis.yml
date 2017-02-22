@@ -9,6 +9,7 @@ services:
   - docker
 before_install:
   - sudo apt-get update  
+  - sudo apt-get install git-core curl zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libcurl4-openssl-dev python-software-properties libffi-dev nodejs
   - sudo apt-get install unixodbc-dev
   - sudo docker pull microsoft/mssql-server-linux  
   - sudo docker run --name dbserver -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=Rsp3cRsp3c' -ti -p 1433:1433 -d microsoft/mssql-server-linux
