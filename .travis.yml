@@ -11,5 +11,5 @@ before_install:
   - sudo apt-get update  
   - sudo apt-get install unixodbc-dev
   - sudo docker pull microsoft/mssql-server-linux  
-  - docker run --name dbserver -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=Rsp3cRsp3c' -ti -p 1433:1433 -d microsoft/mssql-server-linux
-  - docker ps -a 
+  - sudo docker run --name dbserver -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=Rsp3cRsp3c' -ti -p 1433:1433 -d microsoft/mssql-server-linux
+  - sudo docker ps -a 
