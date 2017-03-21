@@ -160,12 +160,7 @@ DEPENDENCIES
   coffee-rails (~> 4.1.0)
   jbuilder (~> 2.0)
   jquery-rails
-<<<<<<< HEAD
   rails (~> 5.0, >= 5.0.2)
-=======
-  rails (= 4.2.7.1)
-  rake
->>>>>>> refs/remotes/origin/master
   ruby-odbc (~> 0.99997)
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
@@ -176,8 +171,5 @@ DEPENDENCIES
   web-console (~> 2.0)
 
 BUNDLED WITH
-<<<<<<< HEAD
    1.14.6
-=======
-   1.14.5
->>>>>>> refs/remotes/origin/master
+
